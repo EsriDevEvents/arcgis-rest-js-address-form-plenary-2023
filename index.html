@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/icons8-address-64.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Address Form App</title>
+  </head>
+  <body id="the-body">
+    <h2>Address Form</h2>
+    <form id="form">
+      <input id="input" type="text" placeholder="Address" />
+      <ul class="suggestions" id="suggestions"></ul>
+      <div class="form-below">
+        <div>
+          <input
+            placeholder="Apt, unit, suite or floor # (optional)"
+            id="apt"
+          />
+        </div>
+        <div>
+          <input placeholder="City" id="city" />
+        </div>
+        <div>
+          <input placeholder="State/Region" id="state" />
+        </div>
+        <div>
+          <input placeholder="Postal/Zip code" id="postal" />
+        </div>
+        <div>
+          <input placeholder="Country" id="country" />
+        </div>
+      </div>
+      <br />
+      <button class="button" data-toggle="modal" data-target="#myModal">
+        Submit
+      </button>
+      <div class="container">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog" id="m-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body" id="modal-body"></div>
+              <div id="button-area">
+                <button
+                  id="submit-btn"
+                  class="btn-lg button"
+                  data-dismiss="modal"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
